@@ -1,0 +1,1066 @@
+/* HEADER */
+header {
+    border-bottom: 5px solid #ca3438;
+}
+
+.box {
+    width: 996px;
+    margin: 0px auto;
+    height: 71px;
+}
+
+.logo {
+    width: 229px;
+    height: 47px;
+    margin-top: 12px;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) no-repeat -20px -473px scroll;
+    float:left
+}
+
+.arrow {
+    display: none;
+    background-image: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png);
+    background-position: -449px -158px;
+    height: 7px;
+    width: 15px;
+    position: absolute;
+    top:24px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.nav .nav1 {
+    display: block;
+    list-style: none;
+    margin: 39px 0px 0px 30px;
+    float:left;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+}
+
+.nav .nav1 >li {
+    display: inline-block;
+    position: relative;
+    margin-left: -3px;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/bg-linenav.png) no-repeat scroll right -1px bottom 17px;
+    z-index: 1;
+}
+
+
+.nav .nav1 >li:hover {
+    border-bottom: 4px solid #ffae00;
+}
+
+.nav .nav1 >li:hover .arrow {
+    display: inline-block;
+}
+
+.nav .nav1 >li:last-child {
+    background: none;
+}
+
+.nav .nav1 >li:hover .nav2{
+    display: block;
+}
+
+.nav .nav1 >li >a {
+    display: block;
+    padding: 0px 10px 19px;
+    text-decoration: none;
+    color:#333;
+}
+
+.nav2 {
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: 0px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #fff;
+    animation: fadeIn ease-out .5s;
+}
+
+.nav2 >li {
+    height: 30px;
+    line-height: 30px;
+    width: 200px;
+    position: relative;
+    padding: 0px 9px;
+    border-bottom: 1px solid #ca3438;
+}
+
+.nav2 >li>a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.nav2 >li:hover{
+    box-shadow: -7px 0px 7px -7px rgb(184, 164, 164) inset;
+}
+
+.nav2 >li:hover >a{
+    color:#cb3338
+}
+
+.nav2 >li:hover .nav3{
+    display: block;
+}
+
+.nav3 {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #fff;
+    animation: fadeIn ease-out .5s;
+}
+
+.nav3 >li {
+    width: 211px;
+    display: inline-block;
+    height: 30px;
+    border-bottom: 1px solid #ca3438;
+    padding:0px 9px;
+}
+
+.nav3 >li:hover a {
+    color:#ca3438;
+}
+
+.nav3 >li>a {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color:#333;
+}
+.search {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) no-repeat scroll -20px -20px;
+}
+
+#click-here {
+    float: right;
+    margin-top: 40px;
+    padding: 0 12px;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/bg-linesearch.png) no-repeat scroll left 1px;
+}
+
+/* SLIDER */
+.slider {
+    height: 284px;
+    position: relative;
+    padding-top: 4px;
+    width: 100%;
+}
+
+.barner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.barner>a {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.slider .barner>a>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    animation:fadeIn cubic-bezier(0.445, 0.05, 0.55, 0.95) .6s;
+}
+
+.img-barner.active {
+    display: block;
+}
+#arrow-slider_prev {
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) no-repeat scroll -327px -108px;
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    left: calc(50% - 30px);
+    top: 85%;
+    cursor: pointer;
+    box-sizing: unset;
+    border: 10px solid transparent;
+}
+
+#arrow-slider_next {
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) no-repeat scroll -359px -108px;
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    left: calc(50% + 10px);
+    top: 85%;
+    cursor: pointer;
+    box-sizing: unset;
+    border: 10px solid transparent;
+}
+
+#arrow-slider_prev:hover,
+#arrow-slider_next:hover {
+    opacity: 0.5;
+}
+/* OVERVIEW */
+.web-container {
+    background-color: #ca3438;
+}
+.overview {
+    padding:20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 23.5%;
+    border-radius: 3px;
+    border:1px dashed #fff;
+    padding:14px 10px;
+    height: 339px;
+}
+
+.clear{
+    clear: both;
+}
+.form-title {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #d45b5f;
+}
+.iconmuch-pen {
+    background-position: -20px -60px;
+    margin-left: 9px;
+    margin-top: 12px;
+    height: 21px;
+    line-height: 21px;
+    width: 23px;
+    display: inline-block;
+    background-image: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png);
+    background-repeat: no-repeat;
+}
+
+.form-title >h2{
+    line-height: 34px;
+}
+
+.form-title >h2>a{
+    float:left;
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    height: 34px;
+    line-height: 34px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 12px;
+}
+
+.form-title >h2>span {
+    float:left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    background-color: #ff7071;
+}
+
+.infor-sign{
+    padding-top: 11.5px;
+}
+
+.infor-sign>form>input{
+    display: block;
+    height: 25px;
+    text-indent: 4px;
+    line-height: 25px;
+    width: 100%;
+    background-color: #db777a;
+    border: 1px solid #b2494c;
+    border-bottom: 1px solid #d76568;
+    color: #fff;
+    padding: 3px 6px;
+    margin-bottom: 6.6px;
+    font-size: 14px;
+    outline: none;
+}
+
+#email{
+    height: 24.5px;
+    margin-bottom: 7px;
+}
+
+.infor-sign>form>input::placeholder{
+    color:#fff;
+}
+
+
+#form_message{
+    display: block;
+    width: 100%;
+    height: 43px;
+    text-indent: 4px;
+    resize: none;
+    background-color: #db777a;
+    border: 1px solid #b2494c;
+    border-bottom: 1px solid #d76568;
+    color: #fff;
+    padding: 3px 6px;
+    margin-top: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+#form_message::placeholder{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+}
+
+#select{
+    position: relative;
+}
+
+#study{
+    display: block;
+    width: 100%;
+    height: 31px;
+    resize: none;
+    background-color: #db777a;
+    border: 1px solid #b2494c;
+    border-bottom: 1px solid #d76568;
+    color: #fff;
+    padding: 5px 0px 5px 10px;
+    font-size: 14px;
+    outline: none;
+    appearance: none;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/dd_arrows.png) no-repeat right #db777a;
+    background-position-x: 193px;
+}
+
+#divider{
+    position: absolute;
+    border-left: 1px solid #e29295;
+    height: 28px;
+    top:1px;
+    right: 20px;
+}
+
+#study>option{
+    display:block;
+    width: 90%;
+    background-color: #fff;
+    color:#333;
+}
+
+#submit{
+    margin-top: 11px;
+    height: 36px;
+    background: no-repeat 24% center #f89800 scroll;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background: no-repeat 24% center #faa724 scroll;
+}
+
+.education{
+    width: 73.9%;
+    height: 339px;
+    border-radius: 3px;
+    border:1px dashed #fff;
+    padding:14px 18px;
+}
+
+.vt-title {
+    border-bottom: 1px dashed #d45b5f;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.iconmuch-hat{
+    display: inline-block;
+    background-image: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) ;
+    background-position: -63px -60px;
+    height: 20px;
+    line-height: 20px;
+    width: 33px;
+    margin-left: 3px;
+    margin-top: 12px;
+}
+
+.vt-title>h2>a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.vt-title>h2>a>span:first-child {
+    display: inline-block;
+    margin-right: 12px;
+    background-color: #ff7071;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.control-div {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/bg-linediv.png) no-repeat center center;
+    height: 35px;
+    width: 42px;
+}
+
+#wd-prev2,
+#wd-prev1,
+#wd-prev {
+    right: 30px;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) no-repeat scroll;
+    background-position: -263px -108px;
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    top: -1px;
+    cursor: pointer;
+    box-sizing: unset;
+    border:10px solid transparent;
+    border-right: 0px;
+}
+
+#wd-next2,
+#wd-next1,
+#wd-next {
+    right: -8px;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) no-repeat scroll;
+    background-position: -295px -108px;
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    top: -1px;
+    cursor: pointer;
+    box-sizing: unset;
+    border:10px solid transparent;
+    border-left: 0px;
+}
+
+#wd-prev2:hover,
+#wd-prev1:hover,
+#wd-prev:hover{
+    background-position: -327px -108px;
+}
+
+#wd-next2:hover,
+#wd-next1:hover,
+#wd-next:hover {
+    background-position: -359px -108px;
+}
+.list-course {
+    display: flex;
+    padding-top:20px;
+    overflow: hidden;
+}
+
+.course {
+    display:block;
+    height: 232.4px;
+    background-color:transparent;
+    margin:0px 10px;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+
+}
+
+.course>a{
+    display: inline-block;
+    border-radius: 50%;
+    padding:5px;
+    border: 1px dashed white;
+    margin:0px auto;
+}
+
+.course>a>img{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.course-description {
+    color:#fff;
+}
+
+.course-description>h3 {
+    margin-top: 7px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.course-description>p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 19.2px;
+}
+/* INTRODUCE */
+.intro-container{
+    background-color:#fff;
+}
+.intro {
+    width: 996px;
+    height: 377px;
+    margin: 0px auto;
+    padding: 47px 0px 20px 0px;
+}
+
+.span-8{
+    float: left;
+    height: 100%;
+    width: 66.66667%;
+    background-color: #fff;
+}
+
+.span-8>a{
+    float: left;
+    display: block;
+    padding: 5px;
+    background: #fff;
+    width:259px;
+    height:259px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+}
+.span-8>a>img{
+    border-radius: 50%;
+}
+
+.iviettech {
+    float: left;
+    width: 397px;
+    padding-left: 63px;
+}
+
+.iviettech>h2{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.iviettech>h2>a{
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) no-repeat -20px -158px scroll;
+    width: 229px;
+    height: 47px;
+    display:block;
+}
+
+.iviettech>h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #2f2f2f;
+    font-weight: normal;
+    text-transform: capitalize;
+    line-height: 41px;
+    padding: 10px 0 7px;
+}
+
+.iviettech>p{
+    margin: 12px 7px 0px 0px;
+    color:#2f2f2f;
+    font: normal normal 100% Arial, Helvetica, sans-serif;
+    line-height: 19.5px;
+    font-size: 13px;    
+}
+
+.text-right>a{
+    float:right;
+    display: block;
+    text-decoration: none;
+    background-color: #c5450c;
+    font-size: 12px;
+    color:#fff;
+    padding: 2px 7px 3px;
+    border-radius: 4px;
+}
+
+.text-right>a:hover{
+    background-color: #fc5105;
+}
+
+
+.span-4{
+    float: left;
+    height: 100%;
+    width: 33.33333%;
+    background-color:#fff;
+    padding-left: 17px;
+}
+
+.support-title{
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #d2d2d2;
+    margin-bottom: 15px;
+}
+
+.support-title>h2>a{
+    display: block;
+    color: #2f2f2f;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    text-align: center;
+    line-height: 31.5px;
+}
+.support-title>h2>a>span{  
+    float:left;
+    background-color: #ca3438;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -7px;
+}
+
+.support-title>h2>a>span>i{ 
+    background-position: -270px -282px;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    margin-left: 8px;
+    margin-top: 6px;
+    display: inline-block;
+    background-image: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png);
+    background-repeat: no-repeat;
+}
+
+.likeboxwrap{
+    padding-left: 1px;
+}
+
+/* INFOR */
+.infor-container{
+    background-color:#ca3438;
+}
+.infor {
+    width: 996px;
+    margin: 0px auto;
+    height: 489px;
+    padding:10px 0px 15px;
+}
+
+.infor-content {
+    width: 69%;
+    float: left;
+    height: 100%;
+}
+
+.iconmuch-calendar {
+    height: 23px;
+    width: 21px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) -116px -60px no-repeat;
+}
+
+#cal-learn {
+    position: relative;
+    top:5px;
+}
+
+#cal-learn:hover {
+    text-decoration: underline;
+}
+
+.list-category {
+    height: 316px;
+    overflow: hidden;
+}
+
+.list-category_element {
+    display: block;
+    list-style: none;
+    height: 79px;
+    padding:8px 0px;
+}
+
+.list-category_item {
+    display: inline-block;
+    list-style: none;
+    width: 320px;
+}
+
+.list-category_item a {
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    height: 19.5px;
+    line-height: 19.5px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-category_item >a{
+    display: block;
+    height: 63px;
+    float: left;    
+    color:#fff;
+    margin-right: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.list-category_item >a>img{
+    display: inline-block;
+    width: 63px;
+    height: 63px;
+}
+
+.list-category_item p {
+    height: 19.5px;
+    line-height: 19.5px;
+    color:#fff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category-description {
+    width: 329px;
+}
+
+.category-description>a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.infor-sidebar {
+    width: 31%;  
+    float: left;
+    height: 100%;
+    padding: 14px 10px 6px;
+    border:1px dashed #fff;
+    border-radius: 3px;
+}
+
+.iconmuch-notice {
+    height: 24px;
+    width: 27px;
+    display: inline-block;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) -258px -60px  no-repeat;
+    margin-left: 6px;
+    margin-top: 8px;
+}
+
+.list-other-course {
+
+}
+
+.course-other {
+    display: block;
+    height: 97.8px;
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px dashed #d45b5f;
+}
+
+.course-other >a{
+    float: left;
+    margin-top: 6px;
+    margin-right: 9px;
+}
+.course-other >a>img {
+    width: 43px;
+    height: 44px;
+}
+
+.course-other-description {
+    float: left;
+    color:#fff;
+    font-size: 13px;
+    padding-left: 9px;
+}
+
+.course-other-description >a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    height: 19.5px;
+    line-height: 19.5px;
+    font: normal normal 100% Arial, Helvetica, sans-serif;
+}
+
+.course-other-description >a:hover{
+    text-decoration:underline;
+    color: #fff;
+}
+
+.course-other-description >p {
+    height: 19.5px;
+    line-height: 19.5px;    
+    font: normal normal 100% Arial, Helvetica, sans-serif;
+}
+/* EVENT */
+.event {
+    width: 996px;
+    margin: 0px auto;
+    padding-top: 30px;
+}
+
+.event-content {
+    width: 58.33333%;
+    float: left;
+    height: 100%;
+}
+
+.iconmuch-news {
+    display: inline-block;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) -169px -60px  no-repeat;
+    height: 24px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+.vt-iterm {
+    padding: 25px 0px;
+}
+
+.vt-iterm >div{
+    float: right;
+    width: 52%;
+}
+
+.vt-iterm >div>h3 {
+    font-size: 24px;
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #2f2f2f;
+    padding: 3px 0;
+}
+
+.vt-iterm >div>p {
+    margin: 12px 0;
+    font:normal 100% Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #2f2f2f;
+    line-height: 19.5px;
+}
+
+.vt-date {
+    color: #979797 !important;
+    display: inline-block;
+}
+
+.respond-from-student {
+
+}
+
+.box-arrow {
+    margin-bottom: 20px;
+    /* position: relative; */
+}
+
+.box-arrow::after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(238, 238, 238, 0);
+    border-top-color: #eeeeee;
+    border-width: 20px;
+    margin-left: -20px;
+}
+
+.quote {
+    padding-top: 20px;
+}
+
+.box-inner {
+    width: 100%;
+}
+
+.blockquote::before {
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 19.5px;
+    content: "\f10d";
+    left: 0;
+    top: 0;
+}
+
+.blockquote::after {
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 19.5px;
+    content: "\f10e";
+    right: 0;
+    bottom: 50px;
+}
+
+.blockquote {
+    padding-top: 15px;
+}
+
+.blockquote p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2f2f2f;
+}
+
+.choise-student {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.item-tmb {
+    margin: 10px 0px;
+    min-height: 125px;
+}
+
+.item-tmb img{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border:5px solid #cf484c;
+}
+
+.item-tmb img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.iconmuch-datelar {
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+    margin-right: 6px;
+    display: inline-block;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) -391px -108px no-repeat;
+}
+
+.event-sidebar {
+    padding-left: 25.5px;
+    width: 41.66667%; 
+    float: left;
+    height: 100%;
+}
+
+.iconmuch-career {
+    width: 25px;
+    margin-left: 6px;
+    margin-top: 10px;
+    display: inline-block;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) -213px -60px no-repeat;
+}
+
+.vt-career {
+    padding: 25px 0px 20px 20px;
+}
+
+.iconmuch-date {
+    height: 12px;
+    line-height: 12px;
+    width: 12px;
+    margin-right: 6px;
+    margin-top: 1px;
+    display: inline-block;
+    background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png) -427px -108px no-repeat;
+}
+
+.vt-list-recruitment >li {
+    list-style: none;
+    display: flex;
+    padding: 7px 0px;
+}
+
+.vt-list-recruitment >li >a {
+    height: 63px;
+    background-color: rgb(236, 96, 96);
+}
+.vt-news-content {
+    margin-left: 19px;
+    width: 290px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 19.5px;
+}
+
+
+.vt-news-content>p> a {
+    text-decoration: none;
+    color:#cf484c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.vt-news-content>p> a:hover {
+    color: #00a300;;
+}
+/* FOOTER */
+footer {
+    height: 57px;
+    background-color:#a9a9a9;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.vt-brand{
+    line-height: 19.5px;
+    float: left;
+    width: 70%;
+    padding: 10px 0px 9px;
+}
+
+.vt-brand>p>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.copyright{
+    float:right;
+    padding-right: 70px;
+    height: 57px;
+    line-height: 57px;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #fff;
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
